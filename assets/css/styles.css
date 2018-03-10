@@ -6,8 +6,7 @@
 
 html {
     font: normal 16px sans-serif;
-    color: #555;
-
+    color: #0F6DA8;
 }
 
 nav {
@@ -17,6 +16,7 @@ nav {
 a {
     text-decoration: none;
     opacity: 0.75;
+    color: #0F6DA8;
 }
 
 a:hover {
@@ -28,7 +28,8 @@ a.btn {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    background-color: #3f51b5;
+    background-color: #0F6DA8;
+    color: #fff;
     opacity: 1;
 }
 
@@ -41,11 +42,14 @@ section {
 
 header {
     display: flex;
+    position: absolute;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 35px 100px 0;
     animation: 1s fadein 0.5s forwards;
     opacity: 0;
+    color: #0F6DA8;
 }
 
 @keyframes fadein {
@@ -67,17 +71,56 @@ header nav li {
     margin: 0 15px;
 }
 
-/* main section styles */
+.nav-logo-area {
+    width: 200px;
+    height: auto;
+}
+
+.politika-nav-logo {
+    max-width:100%;
+    max-height:100%;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr {
+    width: 250px;
+    height: 3px;
+    background-color: #0F6DA8;
+    border: 0;
+    margin-bottom: 50px;  
+}
+
+section p {
+    max-width: 775px;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section h3.title {
+    font: bold 32px "Lato", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* main section  */
 
 .main {
     position: relative;
     justify-content: center;
     text-align: center;
     min-height: 100vh;
+    color: #0F6DA8;
 }
 
 .main .background-main {
-    background-color: #dedede;
     position: absolute;
     top: 0;
     left: 0;
@@ -95,4 +138,49 @@ header nav li {
 .main h3 {
     font: normal 25px "Lato", sans-serif;
     margin-bottom: 40px;
+}
+
+.main a.btn {
+    padding: 20px 45px;
+}
+
+.main-content {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+.main-logo-area {
+    width: 500px;
+    height: auto;
+}
+
+.politika-main-logo {
+    max-width:100%;
+    max-height:100%;
+}
+
+/* about-politika */
+
+.about-politika .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.about-politika .grid li i {
+    color: #0F6DA8;
+}
+
+.about-politika .grid li h4 {
+    font-size: 30px;
+    margin: 25px 0;
 }
